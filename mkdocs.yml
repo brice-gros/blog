@@ -1,0 +1,20 @@
+site_name: Home
+nav:
+    - Home: index.md
+theme: readthedocs
+markdown_extensions:
+  - codehilite # not required since code highlight is supported by readthedocs theme
+  - admonition
+  - nl2br
+  - sane_lists
+  - footnotes
+  - abbr
+  - fontawesome_markdown
+  - toc:
+      permalink: true
+plugins:
+    - search
+    - pdf-export:
+        combined: true
+        media_type: print
+        enabled_if_env: ENABLE_MKDOCS_PDF_EXPORT
